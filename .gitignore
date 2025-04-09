@@ -1,35 +1,82 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# React Native
 node_modules/
+ios/Pods/
+*.log
+*.lock
+*.tmp
+*.temp
+*.swp
 
-# Expo
-.expo/
-dist/
-web-build/
-
-# Native
-*.orig.*
+# React Native Build
+android/.gradle/
+android/app/build/
+ios/build/
+*.keystore
 *.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+
+# Misc
+.env
+.env.*    # All environment variants
+.expo/
+.expo-shared/
+web-build/
+*.DS_Store
+*.idea/
+*.vscode/
+coverage/
+dist/
 
 # Metro
-.metro-health-check*
+.cache/
+babel.config.js
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # macOS
 .DS_Store
-*.pem
 
-# local env files
-.env*.local
+# Windows
+*.stackdump
 
-# typescript
-*.tsbuildinfo
+# Linux
+*~
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+expo-debug.log*
+
+# Watchman
+.watchmanconfig
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcuserstate
+
+# Android Studio
+*.iml
+.gradle/
+local.properties
+.idea/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Bundle output
+*.apk
+*.aab
+*.ipa
+
+config.js
+.env
